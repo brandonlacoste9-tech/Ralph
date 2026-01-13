@@ -9,6 +9,8 @@
   },
   "scripts": {
     "start": "node src/cli.js",
+    "create": "node src/cli.js create",
+    "examples": "bash examples.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

@@ -13,8 +13,8 @@ export async function fixErrors(projectPath, errors) {
     try {
       if (error.type === 'install') {
         // Try to fix installation errors
-        fixes.push('Retrying npm install with clean cache...');
-        await execa('npm', ['install', '--cache', '/tmp/npm-cache'], {
+        fixes.push('Retrying npm install...');
+        await execa('npm', ['install'], {
           cwd: projectPath,
           stdio: 'pipe',
         });

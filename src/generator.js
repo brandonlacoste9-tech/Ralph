@@ -284,7 +284,7 @@ function App() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && addTodo()}
+              onKeyDown={(e) => e.key === 'Enter' && addTodo()}
               placeholder="Add a new task..."
               className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
             />
