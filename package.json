@@ -1,0 +1,32 @@
+{
+  "name": "ralph-fixer",
+  "version": "1.0.0",
+  "description": "Ralph‑Fixer turns plain‑language ideas into working micro‑apps. It generates a full React + Vite + Tailwind project, builds and tests it in a sandbox, and automatically fixes every error until everything runs clean.",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "ralph": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "tailwind",
+    "code-generator",
+    "ai",
+    "micro-apps"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.12",
+    "ora": "^8.0.1",
+    "execa": "^8.0.1",
+    "fs-extra": "^11.2.0"
+  }
+}
