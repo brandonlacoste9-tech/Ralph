@@ -1,0 +1,10 @@
+{
+  "id": "counter",
+  "name": "Counter",
+  "description": "A simple counter app with increment and decrement buttons",
+  "icon": "🔢",
+  "category": "basic",
+  "code": {
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n  <title>Counter App</title>\n  <style>\n    body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }\n    .container { text-align: center; }\n    .counter { font-size: 48px; margin: 20px; }\n    button { font-size: 20px; padding: 10px 20px; margin: 10px; cursor: pointer; }\n  </style>\n</head>\n<body>\n  <div class=\"container\">\n    <h1>Counter App</h1>\n    <div class=\"counter\" id=\"counter\">0</div>\n    <button onclick=\"decrement()\">-</button>\n    <button onclick=\"increment()\">+</button>\n  </div>\n  <script>\n    let count = 0;\n    const counterElement = document.getElementById('counter');\n    function increment() { count++; counterElement.textContent = count; }\n    function decrement() { count--; counterElement.textContent = count; }\n  </script>\n</body>\n</html>"
+  }
+}
